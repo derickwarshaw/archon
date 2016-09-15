@@ -6,14 +6,6 @@ const examplePage = require(`../../../projects/${project}/selectors/example`);
 
 
 module.exports = {
-  
-  mobileView(done) {
-    client.setViewportSize({
-      height: 768,
-      width: 1024
-    }, true).then(done);
-  },
-  
   openApp(done) {
     client.init(done);
   },

@@ -10,7 +10,7 @@ const common = require('../../core/projects/example/helpers/common');
 
 describe('Example Test', () => {
   before((done) => {
-    common.openBrowser(done);
+    common.openApp(done);
   });
 
   describe('Example', () => {
@@ -22,5 +22,5 @@ describe('Example Test', () => {
   after((done) => {
     common.end(done);
   })
-  
+
 });
