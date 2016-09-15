@@ -2,11 +2,10 @@
 
 ## 0.1.0
 
-- Something that changed
-    - Details about the change
+- stuff
 
 
 ### Known Issues:
 
-1. Description of a known issue
+1. A known issue
 
