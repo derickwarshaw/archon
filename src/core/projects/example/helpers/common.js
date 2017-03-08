@@ -1,4 +1,5 @@
-const clientType = require('../../../projects/config').client;
+// const clientType = require('../../../projects/config').client;
+import { client as clientType } from '../../../projects/config';
 const client = require(`../../../../core/clients/${clientType}`).client;
 const project = require('../../../projects/config').project;
 const config = require(`../../../projects/${project}/config`);

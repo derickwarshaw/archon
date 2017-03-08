@@ -2,7 +2,7 @@ const mochaOptions = {
   timeout: '50000',
   reporter: 'mochawesome',
   reporterOptions: {
-    reportDir: './lib/test/example/reports',
+    reportDir: './reporting/example',
     reportName: 'report',
     reportTitle: 'Example Report',
     inlineAssets: true
