@@ -6,7 +6,8 @@
  * run test with appium flag for client
  */
 
-const common = require('../../core/projects/example/helpers/common');
+// const common = require('../../core/projects/example/helpers/common');
+import common from '../../core/projects/example/helpers/common';
 
 describe('Example Test', () => {
   before((done) => {

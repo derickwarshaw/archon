@@ -5,7 +5,7 @@ const config = require(`../../../projects/${project}/config`);
 const examplePage = require(`../../../projects/${project}/selectors/example`);
 
 
-module.exports = {
+export default {
   openApp(done) {
     client.init(done);
   },
@@ -18,5 +18,5 @@ module.exports = {
     client.end();
     done();
   }
-  
+
 };
