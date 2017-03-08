@@ -82,3 +82,6 @@ report.json
 # documentation stuff
 docs
 manual
+
+#compiled js
+lib
