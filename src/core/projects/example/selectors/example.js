@@ -1,7 +1,6 @@
-module.exports = {
-    routes: {
-        baseUrl: 'localhost:3000/'
-    },
-
-    selectors: {}
+export default {
+  routes: {
+    baseUrl: 'http://www.google.com'
+  },
+  selectors: {}
 };

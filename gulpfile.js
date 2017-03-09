@@ -7,7 +7,6 @@
  **/
 
 const gulp = require('gulp');
-const browserSync = require('browser-sync');
 const selenium = require('selenium-standalone');
 const mocha = require('gulp-mocha');
 const project = require('./lib/core/projects/config').project;
@@ -19,21 +18,7 @@ const getTask = function (task) {
 
 function terminateProcess() {
   selenium.child.kill();
-  browserSync.exit();
 }
-
-gulp.task('serve:test', function (done) {
-  browserSync({
-    logLevel: 'silent',
-    notify: false,
-    open: false,
-    port: 9000,
-    server: {
-      baseDir: ['test']
-    },
-    ui: false
-  }, done);
-});
 
 /**
  * Task that will install and start server - good for CI and first time running the project
@@ -66,7 +51,7 @@ gulp.task('selenium-start', function (done) {
   });
 });
 
-gulp.task(`${test}`, ['serve:test', 'selenium'], getTask(`${test}`));
+gulp.task(`${test}`, ['selenium'], getTask(`${test}`));
 
 gulp.task(`initiate-${test}`, [`${test}`], function () {
   terminateProcess();
